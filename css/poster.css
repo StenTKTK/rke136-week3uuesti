@@ -1,0 +1,130 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap'); 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #151515;
+}
+
+.container {
+  text-align: center; /* Center align entire page content */
+}
+
+.movie-card {
+  margin-top: 5rem; /* 5rem margin from top */
+  height: 800px;
+  text-align: center;
+}
+
+.movie-title {
+  text-transform: uppercase;
+  animation: titleFadeIn 1s ease-in-out forwards; 
+}
+
+@keyframes titleFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.movie-poster-container img {
+  margin-top: 2rem;
+  height: 500px;
+  border-radius: 10px; 
+  animation: posterScaleUp 1s ease-in-out forwards;
+}
+
+@keyframes posterScaleUp {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+}
+  
+.movie-rating {
+  display: inline-block;
+  border: 1px solid #151515;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+  
+.movie-duration {
+  margin-left: 1rem;
+  letter-spacing: 0.2rem;
+}
+  
+.movie-duration:before {
+  content: "• "; /* Bullet point before duration */
+}
+  
+.movie-info-quote {
+  color: #151515a4;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+  
+.movie-info-overview-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+  
+.movie-info-actions {
+  font-size: 1.1rem;
+}
+  
+.movie-info-actions ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+  
+.movie-info-actions ul li {
+  margin: 0 1rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(3, 37, 65);
+  transition: transform 0.3s ease-in-out;
+}
+  
+.movie-info-actions ul li:hover {
+  transform: scale(1.1);
+}
+  
+.movie-info-actions ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #777;
+}
+  
+footer a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333; /* A darker shade for better contrast */
+}
+  
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+  
+footer ul li {
+  margin: 0 1rem;
+}
